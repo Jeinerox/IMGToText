@@ -154,7 +154,6 @@ class IMGToText:
         if photo_path == "":
             messagebox.showerror("Error", "Photo path is empty");
             return
-        # может быть .jpg, .jpeg, .png, .gif
         if not re.match(r".+\.(jpg|jpeg|png|gif)$", photo_path):
             messagebox.showerror("Error", "Invalid file extension");
             return
